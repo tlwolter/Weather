@@ -187,7 +187,7 @@
   const REFRESH_SECONDS = 60;
   // ───────────────────────────────────────────────────
 
-  const API_URL=`https://rt.ambientweather.net/v1/devices?applicationKey=${APP_KEY}&apiKey=${API_KEY}&limit=1`;
+  const API_URL = 'https://ambient-weather-proxy.tlwolter.workers.dev';
 
   function degToDir(d){return['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'][Math.round(d/22.5)%16];}
   function v(x,d=1){return(x===undefined||x===null)?'--':Number(x).toFixed(d);}
